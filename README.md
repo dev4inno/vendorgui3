@@ -27,8 +27,7 @@ Alternatively you can use the search button on the first screen to pick up the v
 
 ![](img/image3.png)
 
- \
- \
+
 
 
 All vendors starting with “B” and the subsequent ones are listed and we can pick up our vendor by a double-click:
@@ -50,7 +49,7 @@ However, further checks can be added following the same logic.
 
 If another user maintains a vendor record, this message will be shown and the vendor will only be ![](image7.png)displayed:
 
- \
+
 
 
 This is the about screen:
@@ -67,7 +66,7 @@ After compiling VBISAM and GnuCOBOL you can build the program with:
 
 cobc --static -x `pkg-config --libs gtk+-3.0` vendorgui3.cbl
 
- \
+
 
 
 One hint: 
