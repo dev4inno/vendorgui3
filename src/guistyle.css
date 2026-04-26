@@ -1,0 +1,222 @@
+@define-color deepblue #1d8a99;
+@define-color black #0e1116;
+@define-color lavender #b7c3f3;
+@define-color purple #735290;
+@define-color turquoise #3ba99c;
+@define-color mylightblue #EAF1F6;
+@define-color mymediumblue #B6CCDE;
+@define-color mymenublue #CFDDE8;
+@define-color mybtnyellow #FFE07F;
+
+.backing {
+    background-color : @mylightblue;
+}
+.button {
+/*    border: none;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 16px; */
+    background-image: -gtk-gradient (linear,
+				     left top, left bottom,
+                                     from (#FFEEBD),
+                                     to (#FFD965));       
+}
+/*button > label{
+    padding: 15px 32px;
+    background-color: @mybtnyellow;
+    color: @mybtnyellow;
+} */
+
+.button:hover,
+.toolbar.button:hover {
+    border-color: @button_border;
+    background-image: -gtk-gradient (linear,
+				     left top, left bottom,
+				     from (#FFF5C4),
+				     to (#FFEE9F));
+
+}
+
+.wintitle{
+    font-family: Sans-serif ;
+    font-weight: bold;
+    font-size: 18px;
+    background-color : @mymediumblue;
+}
+.winmenu{
+    background-color : @mymenublue;
+}
+.winmessage{
+    background-color : white;
+    color: red;    
+}
+.winmenubar{
+    background-color : white;  
+    background-image: -gtk-gradient (linear,
+				     left top, left bottom,
+				     from (#FFFFFF),
+				     to (#FFFFFF));       
+}
+.buttonyellow{
+  border-image: none;
+  background-image: none;
+  color: @mybtnyellow;
+}
+
+/****************
+ * Text Entries *
+ ****************/
+
+/* 
+ 
+.entry,
+.toolbar.entry {
+    background-color: #c8c8c8;
+    background-image: none;
+    color: #000;
+    border-radius: 2;
+    border-width: 1;
+    border-style: solid;
+    -adwaita-border-gradient: -gtk-gradient (linear,
+                                             left top, left bottom,
+                                             from (shade (@internal_element_color, 1.14)),
+                                             to (shade (@internal_element_color, 1.37)));
+
+    padding: 2;
+} 
+
+.toolbar.entry:focused {
+    border-color: @focused_entry_border;
+    -adwaita-border-gradient: none; 
+    background-color: @mybtnyellow;    
+}
+
+.entry:insensitive {
+    background-color: @insensitive_bg_color;
+    border-color: shade (@inactive_frame_color, 0.945);
+    -adwaita-border-gradient: none;
+}
+
+.entry.progressbar {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+
+    border-width: 1;
+    border-radius: 4;
+    border-color: @progressbar_border;
+}
+*/
+
+
+.entry{
+    background-color : white;
+    background-image: url("file:/storage/source/gnucobol/gtk_3.0/buildertest/entry_white.png");  
+
+/*    
+    fill: none;    
+    user-select: none;
+    */
+}
+.entry:focus {
+/*
+    color: blue;
+    background-color: yellow;
+    outline-color: red;
+    outline-style: solid;
+    outline-width: 2px;
+
+   background-image: url("file:/storage/source/gnucobol/gtk_3.0/buildertest/entry_yellow.png");  
+
+   */
+    background-image: url("entry_yellow.png");    
+    outline-style: none;
+/*  user-select: none;  
+    fill: none; 
+    background-image: -gtk-gradient (linear,
+				     left top, left bottom,
+				     from (#FFF5C4),
+				     to (#FFEE9F));    
+*/				     
+}
+.entry:disabled {
+    color: darkblue;
+    background-color: @insensitive_bg_color;
+    border-color: shade (@inactive_frame_color, 0.945);
+    background-image: url("file:/storage/source/gnucobol/gtk_3.0/buildertest/entry_disabled.png");       
+    -adwaita-border-gradient: none;
+}
+
+/***********
+ * Label as button
+ ***********/
+.lblbutton {
+    padding: 0;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #222;
+    border-style: solid;
+    color: #fff;
+
+/*    background-image: -gtk-gradient (linear,
+				     left top, left bottom,
+                                     from (@button_gradient_color_a),
+                                     to (@button_gradient_color_b));  */
+     background-image: url("search.gif");
+     background-repeat: no-repeat;
+     background-position: center;
+/*     background-color: #cccccc; */              
+}
+
+.lblbutton:hover,
+.toolbar.lblbutton:hover {
+    border-color: @button_border;
+    background-image: -gtk-gradient (linear,
+				     left top, left bottom,
+				     from (@button_hover_gradient_color_a),
+				     to (@button_hover_gradient_color_b));
+
+}
+
+.lblbutton:active,
+.toolbar .lblbutton:active,
+.lblbutton:hover:active,
+.toolbar.lblbutton:hover:active {
+    background-image: -gtk-gradient (linear,
+    				     left top, left bottom,
+                                     from (@button_active_gradient_color_a),
+				     to (alpha (@button_active_gradient_color_b, 0.13)));
+    border-color: @highlighted_border;
+}
+
+.lblbutton:disabled {
+    background-image: none;
+    background-color: #9c9c9c;
+    color: #cfcfcf;
+}
+
+.lblbutton.default {
+    border-width: 2px;
+    border-color: shade (@button_border, 1.10);
+	
+}
+
+/*
+*:selected{
+    background-color: transparent;
+}
+
+*.view:selected {
+    background-color: transparent;
+}
+
+textview selection {
+    background-color: transparent;
+}
+
+selection {
+    background-color: transparent;
+ } 
+
+*/
+
+/* https://github.com/brc/configs/blob/master/home/.themes/Atolm-gtk3/gtk-3.0/gtk-widgets.css */
