@@ -6,7 +6,7 @@ The program manages a supplier/vendor database. It’s main focus is on simplici
 
 After starting the program this screen is presented:
 
-![](image1.png)
+![](img/image1.png)
 
 Now you can either
 
