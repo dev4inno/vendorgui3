@@ -849,6 +849,9 @@
                              by content z"New vendor"
                           end-call
                        else
+                          move ve-vennr        to null-vennr
+                          move vendor-record-i to vendor-record
+                          move null-vennr      to ve-vennr  
                           move "N"             to ve-dflag
                           move wusername       to ve-cuser
                           move dat-sys         to ve-cdate                 
