@@ -38,7 +38,7 @@ Here we got it:
 
 ![](img/image5.png)
 
- \
+ 
 
 
 Currently there is only one check implemented: the company name should not be empty (see below)
