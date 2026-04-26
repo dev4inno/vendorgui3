@@ -294,7 +294,7 @@
 
        linkage section.
 
-       01 gdk-event            usage pointer. 
+       01 gdk-event. 
           05 filler            usage binary-short.     
           05 filler            usage pointer.     
           05 filler            usage binary-short.     
