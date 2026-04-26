@@ -218,7 +218,7 @@
                VALUE "File vendor could not be opened - Program terminat 
       -    "ed        ".
       * Message 6
-      * §§§ Number of vendor !!!! 
+      * Â§Â§Â§ Number of vendor !!!! 
            05  FILLER                      PIC X(60)
                VALUE "Vendor is locked by another user
       -    "          ".
@@ -1377,7 +1377,7 @@
            move rec-value to ve-rem02 
       * DFLAG
       
-           if ve-dflag not equal "N"
+      *     if ve-dflag not equal "N"
       *       gtkcheckbutton is a subclass of gtktogglebutton
               call "gtk_toggle_button_get_active" using
                  by value gtk-checkbutton
@@ -1388,7 +1388,7 @@
               else 
                  move "X"   to ve-dflag
               end-if
-           end-if   
+      *     end-if   
              
                    
            call "gtk_main_iteration"
