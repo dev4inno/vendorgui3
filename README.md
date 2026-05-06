@@ -49,7 +49,7 @@ However, further checks can be added following the same logic.
 
 If another user maintains a vendor record, this message will be shown and the vendor will only be displayed:
 
-![](image7.png)
+![](img/image7.png)
 
 
 This is the about screen:
