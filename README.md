@@ -73,7 +73,7 @@ One hint:
 
 If you live in a country which uses a language with special characters (like almost all European countries) you should use a single-byte (8-bit) code page for your language. This ensures that the fields in the record are filled in their correct length.
 
-If this does not affect you (e.g. in the U.S.), you can change this line in th program:
+If this does not affect you (e.g. in the U.S.), you can change this line in the program:
 
 ![](img/image9.png)
 
